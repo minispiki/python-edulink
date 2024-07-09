@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "edulink"
+version = "0.1.0"
+description = "EduLink One API Integration for Python"
+authors = ["Richy Z <64844585+Richy-Z@users.noreply.github.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+DateTime = "^5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+
+[project]
+name = "edulink"
+version = "0.1.0"
+authors = [
+  { name="Richy Z", email="64844585+Richy-Z@users.noreply.github.com" },
+]
+description = "EduLink One API Integration for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GPL-3.0",
+]
+keywords = ["edulink", "api", "python", "overnet", "overnetdata", "edulinkone", "school", "england", "wales", "scotland"]
+dependencies = ["requests", "datetime"]
+
+[project.urls]
+Homepage = "https://github.com/Richy-Z/python-edulink"
+Issues = "https://github.com/Richy-Z/python-edulink/issues"
+Repository = "https://github.com/Richy-Z/python-edulink.git"
