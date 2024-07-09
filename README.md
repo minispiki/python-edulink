@@ -1,3 +1,5 @@
+[![Package Validation](https://github.com/Richy-Z/python-edulink/actions/workflows/python-package.yml/badge.svg)](https://github.com/Richy-Z/python-edulink/actions/workflows/python-package.yml)
+
 # 🏫 edulink for Python
 A Python PyPI package that provides semless integration between the EduLink One API and Python.
 
