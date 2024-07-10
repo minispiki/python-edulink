@@ -75,7 +75,7 @@ class Student:
 
         return self.school
 
-    def authenticate(self, username: str, password: str, school_postcode: str = None):
+    def authenticate(self, username: str, password: str, school_postcode: str = None) -> str:
         if not school_postcode and not self.school:
             raise Exception(
                 "Neither the school postcode or an existing school information dictionary were available. Authentication failed due to lack of information."
@@ -111,7 +111,7 @@ class Student:
         # "close" will return data found for the specified date or return data for the closest future date without raising errors.
         proximity: str = "exact",
         learner_id: int = None,
-    ):
+    ) -> dict:
         if time_scale not in ["day", "week"]:
             raise ValueError(
                 f"{time_scale} is not a valid time scale. time_scale can only be 'day' or 'week'."
@@ -152,7 +152,7 @@ class Student:
 
             return found
 
-    def homework(self, learner_id: int = None):
+    def homework(self, learner_id: int = None) -> dict:
         learner_id = learner_id or self.learner["id"]
 
         result = self.customrequest(
@@ -163,7 +163,7 @@ class Student:
 
     def homeworkInfo(
         self, homework_id: str, homework_source: str = "EduLink", learner_id: int = None
-    ):
+    ) -> dict:
         learner_id = learner_id or self.learner["id"]
 
         result = self.customrequest(
