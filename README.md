@@ -43,7 +43,7 @@ print(me.timetable()) # Prints timetable in dictionary form
 Documentation for this package will be created at a later date.
 
 ## ⚖️ Why the GPL License?
-The research I put into this project is not worth putting into closed-source projects, and the EduLink One API is already proprietary enough without documentation.
+The research I put into this project is not worth putting into closed-source projects, and the EduLink One API is already proprietary enough without documentation, so let's not add to that.
 
 ## ⚠️ Disclaimer
 This package is the result of ***reverse engineering efforts***...
