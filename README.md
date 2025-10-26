@@ -17,30 +17,43 @@ If you require an additional feature in this library, please create an issue and
 ## 📥 Installation
 Installing the package is incredibly easy, thanks to `pip`.
 
-**COMING SOON TO PIP**
+**COMING SOON TO PYPI**
+This will soon be added to PYPI soon, see [Issue #1](https://github.com/Richy-Z/python-edulink/issues/1#issuecomment-3438118083)
 
-Type the following into your terminal to install the package:
-```zsh
-pip install edulink
+Install ```requests``` and ```datetime``` lib via pip:
+```pip install requests```
+```pip install datetime```
+
+In your python code, write this:
+
+```py
+import sys
+sys.path.append("//path//to//repo//src//edulink//")
+# sys.path.append("C:\\path\\to\\repo\\src\\edulink\\") # if on windows
+import ___init__.py
 ```
-Please note that macOS and most Linux distributions use `pip3`, as opposed to just regular `pip` on Windows.
 
-Now you have the EduLink package installed!
+Otherwise run ```pip install edulink```
+
+**Note: the ```pip``` executeable may have a different name like ```pip3```**
+
 
 ## 🔨 Usage
 Using this package is incredibly easy. Simply import it, create a student object, authenticate, and start creating API calls!
+
+**Only supports Student**
 
 ```py
 from edulink import Student
 
 me = Student()
 
-me.authenticate("Username", "Password", "School Postcode")
+me.authenticate("Username", "Password", "School Postcode or id")
 
 print(me.timetable()) # Prints timetable in dictionary form
 ```
 
-Documentation for this package will be created at a later date.
+Proper documentation for this package will be created at a later date.
 
 ## ⚖️ Why the GPL License?
 The research I put into this project is not worth putting into closed-source projects, and the EduLink One API is already proprietary enough without documentation, so let's not add to that.
